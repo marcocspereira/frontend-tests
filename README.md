@@ -1,2 +1,3 @@
-# frontend-tests
+# Front-End automated tests
+
 A repository related to Tax IT training session about front-end automated tests.
