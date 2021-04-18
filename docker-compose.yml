@@ -1,0 +1,24 @@
+version: "3"
+services:
+  angular_cli:
+    image: trion/ng-cli:latest
+    container_name: "angular_cli"
+    volumes:
+      - .:/usr/app/
+    working_dir: /usr/app/
+    ports:
+      - 4200:4200
+    # to create a new app in current directory
+    # bash -c "ng new <directory-name> --directory ./"
+    command: >
+      bash -c "ng serve --host 0.0.0.0"
+  angular_karma:
+    image: trion/ng-cli-karma:latest
+    container_name: "angular_karma"
+    volumes:
+      - .:/usr/app/
+    working_dir: /usr/app/
+    ports:
+      - 9876:9876
+    command: >
+      bash -c "ng test"
