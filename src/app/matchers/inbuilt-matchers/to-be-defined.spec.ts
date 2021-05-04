@@ -1,4 +1,4 @@
-describe('toBeDefined matcher', () => {
+xdescribe('toBeDefined matcher', () => {
   it('shoud validate any defined value', () => {
     const num = 10;
     expect(num).toBeDefined();

@@ -1,4 +1,4 @@
-describe('toBeTruthy matcher', () => {
+xdescribe('toBeTruthy matcher', () => {
   it('shoud validate truthy values', () => {
     const caseNumber = 1;
     const caseText = 'TaxIT';

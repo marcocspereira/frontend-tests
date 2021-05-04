@@ -1,4 +1,4 @@
-describe('toBeGreaterThan matcher', () => {
+xdescribe('toBeGreaterThan matcher', () => {
   it('shoud validate a greater value as number', () => {
     const casePi = 3.1415;
 

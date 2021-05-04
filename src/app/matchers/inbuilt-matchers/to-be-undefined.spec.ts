@@ -1,4 +1,4 @@
-describe('toBeUndefined matcher', () => {
+xdescribe('toBeUndefined matcher', () => {
   it('shoud validate undefined values', () => {
     const caseUndefined = undefined;
     expect(caseUndefined).toBeUndefined();

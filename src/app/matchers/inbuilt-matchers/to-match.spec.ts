@@ -1,4 +1,4 @@
-describe('toMatch matcher', () => {
+xdescribe('toMatch matcher', () => {
   it('shoud validate with a string', () => {
     const text = 'Jasmine';
     expect(text).toMatch('Jasmine');

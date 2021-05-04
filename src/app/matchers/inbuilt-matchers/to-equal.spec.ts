@@ -1,4 +1,4 @@
-describe('toEqual matcher', () => {
+xdescribe('toEqual matcher', () => {
   it('shoud validate primitive data type, such boolean', () => {
     expect(true).toEqual(true);
   });
