@@ -37,11 +37,35 @@ export class Calculator {
     }
   }
 
-  upCounter() {
+  upCounter(): void {
     this.counter++;
   }
 
-  downCounter() {
+  downCounter(): void {
     this.counter--;
+  }
+
+  /**
+   * 
+   * Equation: ax^2 + bx + c = 0
+   * @param a coefficient
+   * @param b coefficient
+   * @param c coefficient
+   * @returns an array with numeric values for x1 and x2
+   */
+  generalQuadraticEquation(a: number, b: number, c: number): Array<number> {
+    if (a === 0) {
+      throw new Error('Coefficient -a- cannot be 0');
+    }
+
+    // x = (-b +- sqrt(b^2 - 4ac))/ (2a)
+    const root = Math.sqrt(this.subtract(Math.pow(b, 2), this.multiply(4, this.multiply(a, c))));
+    const denominator = this.multiply(2, a);
+
+    const x1 = this.divide(this.sum(-b, root), denominator);
+    const x2 = this.divide(this.sum(-b, -root), denominator);
+
+    return [x1, x2]
+
   }
 }
