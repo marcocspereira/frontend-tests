@@ -58,7 +58,14 @@ export class Calculator {
     const x1 = this.divide(this.sum(-b, root), denominator);
     const x2 = this.divide(this.sum(-b, -root), denominator);
 
-    return [x1, x2]
+    return [x1, x2];
+  }
 
+  delayedSum(a: number, b: number): Promise<number> {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve(a + b);
+      }, 1000);
+    })
   }
 }
