@@ -62,7 +62,8 @@ export class Calculator {
   }
 
   delayedSum(a: number, b: number): Promise<number> {
-    return new Promise(resolve => {
+    return new Promise((resolve, reject) => {
+      if (a == 0 || b == 0) { reject("I do not accept params with 0"); }
       setTimeout(() => {
         resolve(a + b);
       }, 1000);
