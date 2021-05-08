@@ -1,20 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ButtonComponent } from './button.component';
+import { ZeComponent } from './ze.component';
 
 describe('ButtonComponent', () => {
-  let component: ButtonComponent;
-  let fixture: ComponentFixture<ButtonComponent>;
+  let component: ZeComponent;
+  let fixture: ComponentFixture<ZeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ButtonComponent]
-    })
-      .compileComponents();
+      declarations: [ZeComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ButtonComponent);
+    fixture = TestBed.createComponent(ZeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -23,4 +22,3 @@ describe('ButtonComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-
