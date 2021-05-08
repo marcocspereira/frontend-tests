@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ZeComponent } from './ze.component';
 
-describe('ButtonComponent', () => {
+describe('ZeComponent with generated spec code', () => {
   let component: ZeComponent;
   let fixture: ComponentFixture<ZeComponent>;
 

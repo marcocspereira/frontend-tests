@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ZeComponent } from './ze.component';
 
-describe('ButtonComponent', () => {
+describe('ZeComponent with TestBed', () => {
   let component: ZeComponent;
   let fixture: ComponentFixture<ZeComponent>;
   let nativeElement: HTMLElement;
@@ -24,16 +24,16 @@ describe('ButtonComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should set the class name according to the [className] input', () => {
-    // arrange
+  it('should set the button class name according to the [className] input', () => {
+    /** arrange **/
     component.className = 'danger';
     nativeElement = fixture.nativeElement;
     fixture.detectChanges();
 
-    // act
+    /**act **/
     const button = nativeElement.querySelector('button') as HTMLButtonElement;
 
-    // assert
+    /** assert **/
     expect(button.classList.contains('danger')).toBeTruthy();
     expect(button.classList.contains('success')).toBeFalsy();
   });
