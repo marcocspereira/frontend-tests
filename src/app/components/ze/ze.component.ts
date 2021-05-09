@@ -4,6 +4,7 @@ import {
   AfterViewInit,
   Renderer2,
   ViewChild,
+  Input,
 } from '@angular/core';
 
 export type ButtonClass = 'danger' | 'success';
@@ -14,8 +15,12 @@ export type ButtonClass = 'danger' | 'success';
   styleUrls: ['./ze.component.scss'],
 })
 export class ZeComponent implements AfterViewInit {
-  @ViewChild('dummy')
-  private _dummyButton!: ElementRef<HTMLButtonElement>;
+  /**
+   * The !: (Definite Assignment Assertion)
+   * tells TS that this var will have a value at runtime
+   * (Not the best fix, but it is OK for the purpose of this lesson)
+   * */
+  @ViewChild('dummy') dummyButton!: ElementRef<HTMLButtonElement>;
 
   private _className: ButtonClass = 'success';
   private _dummyText: string = '';
@@ -33,6 +38,7 @@ export class ZeComponent implements AfterViewInit {
     return this._dummyText;
   }
 
+  @Input()
   set dummyText(val: string) {
     this._dummyText = val;
   }
@@ -44,9 +50,9 @@ export class ZeComponent implements AfterViewInit {
   }
 
   private _udpateButtonClass() {
-    this._dummyButton.nativeElement.classList.forEach((element) => {
-      this._renderer2.removeClass(this._dummyButton.nativeElement, element);
+    this.dummyButton.nativeElement.classList.forEach((element) => {
+      this._renderer2.removeClass(this.dummyButton.nativeElement, element);
     });
-    this._renderer2.addClass(this._dummyButton.nativeElement, this.className);
+    this._renderer2.addClass(this.dummyButton.nativeElement, this.className);
   }
 }
