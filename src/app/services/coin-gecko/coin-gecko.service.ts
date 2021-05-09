@@ -7,7 +7,7 @@ import { Coin } from './coin.type';
   providedIn: 'root',
 })
 export class CoinGeckoService {
-  private readonly _coinGeckoAPI = 'api.coingecko.com/api/v3';
+  private readonly _coinGeckoAPI = 'https://api.coingecko.com/api/v3';
   constructor(private _httpClient: HttpClient) {}
 
   getCoins(): Observable<Array<Coin>> {
