@@ -1,0 +1,31 @@
+<form #selectedCoin="ngForm" (ngSubmit)="getCoinData(selectedCoin.value)">
+  <label for="coinId">Type a cryptocurrency ID</label>
+  <input type="text" name="coinId" ngModel />
+  <button type="submit">Get data from CoinGecko</button>
+</form>
+
+<h2>{{ coin?.name }} details</h2>
+<label></label>
+<p>Id: {{ coin?.id }}</p>
+<p>Symbol: {{ coin?.symbol }}</p>
+<p>Genesis date: {{ coin?.genesis_date }}</p>
+<p>MarketCap rank: {{ coin?.market_cap_rank }}</p>
+<p>Current price (EUR): {{ coin?.market_data?.current_price?.eur }}</p>
+
+<h2>All coins</h2>
+<table *ngIf="topCoins">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Symbol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tc of topCoins">
+      <td>{{ tc.name }}</td>
+      <td>{{ tc.id }}</td>
+      <td>{{ tc.symbol }}</td>
+    </tr>
+  </tbody>
+</table>
