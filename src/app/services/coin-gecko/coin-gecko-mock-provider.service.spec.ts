@@ -14,7 +14,7 @@ xdescribe('CoinGeckoService', () => {
   beforeEach(() => (spectator = createService()));
 
   describe('getCoin', () => {
-    it('should call CoinGecko API through HttpClient', () => {
+    it('should get coin data from CoinGecko API through HttpClient', () => {
       /** arrange */
       let result: any;
       const url: string = 'https://api.coingecko.com/api/v3/coins/dogecoin';
@@ -31,7 +31,7 @@ xdescribe('CoinGeckoService', () => {
   });
 
   describe('getTrends', () => {
-    it('should return a list of coins', () => {
+    it('should return a list of trending coins from CoinGecko API through HttpClient', () => {
       /** arrange */
       /** act */
       /** assert */
