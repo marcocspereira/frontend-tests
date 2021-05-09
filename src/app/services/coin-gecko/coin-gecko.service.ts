@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Coin } from './coin.type';
+import { Trend } from './trend.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -20,9 +21,7 @@ export class CoinGeckoService {
     return this._httpClient.get<Coin>(`${this._coinGeckoAPI}/coins/${coinId}`);
   }
 
-  getTrends(): Observable<Array<Coin>> {
-    return this._httpClient.get<Array<Coin>>(
-      `${this._coinGeckoAPI}/search/trending`
-    );
+  getTrends(): Observable<Trend> {
+    return this._httpClient.get<Trend>(`${this._coinGeckoAPI}/search/trending`);
   }
 }

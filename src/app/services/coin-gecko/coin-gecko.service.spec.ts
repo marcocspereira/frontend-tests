@@ -29,7 +29,7 @@ xdescribe('CoinGeckoService', () => {
   });
 
   describe('getTrends', () => {
-    it('should return a list of trending coins', () => {
+    it('should return a list of coins', () => {
       /** arrange */
       /** act */
       /** assert */
