@@ -8,7 +8,7 @@ export type Coin = {
 };
 
 type MarketData = {
-  curent_price: {
+  current_price: {
     usd: number;
     eur: number;
   };

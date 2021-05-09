@@ -7,7 +7,7 @@ export const dogecoin: Coin = {
   genesis_date: '2013-12-08',
   market_cap_rank: 4,
   market_data: {
-    curent_price: {
+    current_price: {
       usd: 0.670717,
       eur: 0.551429,
     },
