@@ -1,9 +1,8 @@
-import { DebugElement } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ZeComponent } from './ze.component';
 
-describe('ZeComponent with TestBed', () => {
+xdescribe('ZeComponent with TestBed', () => {
   let component: ZeComponent;
   let fixture: ComponentFixture<ZeComponent>;
   let nativeElement: HTMLElement;

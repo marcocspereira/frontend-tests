@@ -1,21 +1,13 @@
 import { HttpClient } from '@angular/common/http';
-import {
-  createServiceFactory,
-  mockProvider,
-  SpectatorService,
-} from '@ngneat/spectator';
+import { createServiceFactory, SpectatorService } from '@ngneat/spectator';
 import { CoinGeckoService } from './coin-gecko.service';
 import { dogecoin } from './mocks/dogecoin.mock';
 
-describe('CoinGeckoService', () => {
+xdescribe('CoinGeckoService', () => {
   let spectator: SpectatorService<CoinGeckoService>;
   const createService = createServiceFactory({
     service: CoinGeckoService,
-    providers: [
-      mockProvider(HttpClient, {
-        get: () => 'I am a mocked get',
-      }),
-    ],
+    providers: [],
     mocks: [],
   });
 

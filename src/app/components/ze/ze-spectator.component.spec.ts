@@ -1,7 +1,7 @@
 import { ZeComponent } from './ze.component';
-import { Spectator, createComponentFactory } from '@ngneat/spectator';
+import { createComponentFactory } from '@ngneat/spectator';
 
-describe('ZeComponent with ngneat/spectator', () => {
+xdescribe('ZeComponent with ngneat/spectator', () => {
   const createComponent = createComponentFactory(ZeComponent);
 
   it('should set the button class name according to the [className] input', () => {

@@ -3,7 +3,7 @@ import { createServiceFactory, SpectatorService } from '@ngneat/spectator';
 import { CoinGeckoService } from './coin-gecko.service';
 import { dogecoin } from './mocks/dogecoin.mock';
 
-describe('CoinGeckoService', () => {
+xdescribe('CoinGeckoService', () => {
   let spectator: SpectatorService<CoinGeckoService>;
   const createService = createServiceFactory({
     service: CoinGeckoService,
@@ -29,7 +29,7 @@ describe('CoinGeckoService', () => {
   });
 
   describe('getTrends', () => {
-    it('should return a list of coins', () => {
+    it('should return a list of trending coins', () => {
       /** arrange */
       /** act */
       /** assert */
