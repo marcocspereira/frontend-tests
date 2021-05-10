@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class HttpDummyWrapperService {
   constructor(private _httpService: HttpClient) {}
 
-  get(url: string): Observable<any> {
-    return this._httpService.get<any>(url);
+  get<T>(url: string): Observable<T> {
+    return this._httpService.get<T>(url);
   }
 }
