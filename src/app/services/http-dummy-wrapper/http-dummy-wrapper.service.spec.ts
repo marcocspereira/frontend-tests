@@ -5,7 +5,7 @@ import {
 } from '@ngneat/spectator';
 import { HttpDummyWrapperService } from './http-dummy-wrapper.service';
 
-describe('HttpDummyWrapperService', () => {
+xdescribe('HttpDummyWrapperService', () => {
   let spectator: SpectatorHttp<HttpDummyWrapperService>;
   const createHttp = createHttpFactory(HttpDummyWrapperService);
 

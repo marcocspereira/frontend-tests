@@ -1,14 +1,14 @@
-import { HttpClient } from '@angular/common/http';
 import { createServiceFactory, SpectatorService } from '@ngneat/spectator';
+import { HttpDummyWrapperService } from '../http-dummy-wrapper/http-dummy-wrapper.service';
 import { CoinGeckoService } from './coin-gecko.service';
 import { dogecoin } from './mocks/dogecoin.mock';
 
-xdescribe('CoinGeckoService', () => {
+describe('CoinGeckoService', () => {
   let spectator: SpectatorService<CoinGeckoService>;
   const createService = createServiceFactory({
     service: CoinGeckoService,
     providers: [],
-    mocks: [HttpClient],
+    mocks: [HttpDummyWrapperService],
   });
 
   beforeEach(() => (spectator = createService()));
@@ -17,8 +17,8 @@ xdescribe('CoinGeckoService', () => {
     it('should return details of required coin', () => {
       /** arrange */
       let result: any;
-      const httpClient = spectator.inject(HttpClient);
-      httpClient.get.and.returnValue(dogecoin);
+      const httpWrapper = spectator.inject(HttpDummyWrapperService);
+      httpWrapper.get.and.returnValue(dogecoin);
 
       /** act */
       result = spectator.service.getCoin('dogecoin');
