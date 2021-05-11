@@ -3,7 +3,7 @@ import { HttpDummyWrapperService } from '../http-dummy-wrapper/http-dummy-wrappe
 import { CoinGeckoService } from './coin-gecko.service';
 import { dogecoin } from './mocks/dogecoin.mock';
 
-describe('CoinGeckoService', () => {
+xdescribe('CoinGeckoService', () => {
   let spectator: SpectatorService<CoinGeckoService>;
   const createService = createServiceFactory({
     service: CoinGeckoService,
