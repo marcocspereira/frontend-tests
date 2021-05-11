@@ -1,4 +1,5 @@
-xdescribe('toMatch matcher', () => {
+/**
+describe('toMatch matcher', () => {
   it('shoud validate with a string', () => {
     const text = 'Jasmine';
     expect(text).toMatch('Jasmine');
@@ -12,3 +13,4 @@ xdescribe('toMatch matcher', () => {
     expect(postcode).toMatch(/^\d{4}-\d{3}$/);
   });
 });
+*/

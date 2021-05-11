@@ -1,4 +1,5 @@
-xdescribe('toBeLessThan matcher', () => {
+/**
+describe('toBeLessThan matcher', () => {
   it('shoud validate a smaller value as number', () => {
     const casePi = 3.1415;
 
@@ -11,3 +12,4 @@ xdescribe('toBeLessThan matcher', () => {
     expect(casePi).toBeLessThan(4);
   });
 });
+*/

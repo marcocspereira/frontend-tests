@@ -2,7 +2,8 @@
  * TODO: run this suite and update the spec accordingly
  */
 
-xdescribe('toBe matcher', () => {
+/**
+describe('toBe matcher', () => {
   it('shoud validate primitive data type, such boolean', () => {
     expect(true).toBe(true);
   });
@@ -17,3 +18,4 @@ xdescribe('toBe matcher', () => {
     expect(obj1).toBe(obj2);
   });
 });
+*/

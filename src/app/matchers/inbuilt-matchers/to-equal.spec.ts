@@ -1,4 +1,5 @@
-xdescribe('toEqual matcher', () => {
+/**
+describe('toEqual matcher', () => {
   it('shoud validate primitive data type, such boolean', () => {
     expect(true).toEqual(true);
   });
@@ -13,3 +14,4 @@ xdescribe('toEqual matcher', () => {
     expect(obj1).toEqual(obj2);
   });
 });
+*/

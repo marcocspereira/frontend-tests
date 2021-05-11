@@ -1,4 +1,5 @@
-xdescribe('toContain matcher', () => {
+/**
+describe('toContain matcher', () => {
   it('shoud validate with a string', () => {
     const text = 'TaxIT Porto';
     expect(text).toContain('Porto');
@@ -11,3 +12,4 @@ xdescribe('toContain matcher', () => {
     expect(array).not.toContain('do');
   });
 });
+*/

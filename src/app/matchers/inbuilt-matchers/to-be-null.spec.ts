@@ -1,4 +1,5 @@
-xdescribe('toBeNull matcher', () => {
+/**
+describe('toBeNull matcher', () => {
   it('shoud validate null value', () => {
     const caseNull = null;
     expect(caseNull).toBeNull();
@@ -14,3 +15,4 @@ xdescribe('toBeNull matcher', () => {
     expect(caseText).not.toBeNull();
   });
 });
+*/

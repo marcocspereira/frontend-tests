@@ -1,4 +1,5 @@
-xdescribe('toBeFalsy matcher', () => {
+/**
+describe('toBeFalsy matcher', () => {
   it('shoud validate falsy values', () => {
     const caseUndefined = undefined;
     const caseNaN = NaN;
@@ -22,3 +23,4 @@ xdescribe('toBeFalsy matcher', () => {
     expect(caseTrue).not.toBeFalsy();
   });
 });
+*/
