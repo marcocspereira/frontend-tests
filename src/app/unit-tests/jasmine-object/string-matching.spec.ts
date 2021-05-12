@@ -5,7 +5,8 @@
  * - recebe como parâmetro a substring ou RegEx a validar no teste
  */
 
-xdescribe('jasmine.stringMatching', () => {
+/**
+describe('jasmine.stringMatching', () => {
     let text: any;
 
     beforeAll(() => {
@@ -29,3 +30,4 @@ xdescribe('jasmine.stringMatching', () => {
     });
 
 });
+*/

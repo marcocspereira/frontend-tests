@@ -4,7 +4,8 @@
  * - pode ser utilizado em spies para certificar que um dado valor foi passado como parâmetro
  */
 
-xdescribe('jasmine.anything', () => {
+/**
+describe('jasmine.anything', () => {
     it('should validate the params value type', () => {
         const example1 = jasmine.createSpyObj('example', ['first', 'second']);
         const example2 = jasmine.createSpy('third').and.returnValue(4);
@@ -18,3 +19,4 @@ xdescribe('jasmine.anything', () => {
         expect(example2).toEqual(jasmine.anything());
     });
 });
+*/

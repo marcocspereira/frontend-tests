@@ -4,7 +4,8 @@
  * - é util para verificar se um método foi chamado com um dado argumento de determinado tipo, sem importar com o valor real
  */
 
-xdescribe('jasmine.any', () => {
+/**
+describe('jasmine.any', () => {
     it('should validate the params value type', () => {
         const example1 = jasmine.createSpyObj('example', ['first', 'second']);
 
@@ -15,3 +16,4 @@ xdescribe('jasmine.any', () => {
         expect(example1.second).toHaveBeenCalledWith(jasmine.any(String));
     });
 });
+*/

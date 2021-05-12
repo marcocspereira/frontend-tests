@@ -3,7 +3,8 @@
  * - recebe como parâmetro o array com os valores a serem verificados
  */
 
-xdescribe('jasmine.arrayContaining', () => {
+/**
+describe('jasmine.arrayContaining', () => {
     it('should validate if a given key:value pair exists', () => {
         const array = [10, 20, 30, 40, 50];
 
@@ -12,3 +13,4 @@ xdescribe('jasmine.arrayContaining', () => {
         expect(array).not.toEqual(jasmine.arrayContaining([69]));
     });
 });
+ */
