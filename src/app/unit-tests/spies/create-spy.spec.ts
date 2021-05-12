@@ -1,6 +1,7 @@
-import { Calculator } from './../calculator/calculator';
+import { Calculator } from '../calculator/calculator';
 
-xdescribe('createSpy', () => {
+/**
+describe('createSpy', () => {
 
     it('should test a bare spy', () => {
         const rectangleArea = jasmine.createSpy("rectangleArea").and.returnValue(4);
@@ -29,3 +30,4 @@ xdescribe('createSpy', () => {
         expect(result).toEqual(6);
     });
 });
+*/

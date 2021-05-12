@@ -1,4 +1,5 @@
-xdescribe('createSpyObj', () => {
+/**
+describe('createSpyObj', () => {
     it('should test an object with a set of spies', () => {
         const TaxAuthority = jasmine.createSpyObj('TaxAuthority', ['irs', 'iva', 'irc']);
         TaxAuthority.irs();
@@ -10,3 +11,4 @@ xdescribe('createSpyObj', () => {
         expect(TaxAuthority.irc(1, 1, 1)).toEqual(10);
     });
 });
+*/
