@@ -22,11 +22,6 @@ xdescribe('CoinGeckoComponent', () => {
     });
 
     it('should allow to update [coinId] with setInput', () => {
-      /**
-       * TODO:
-       * - Use dummy data from services/coin-gecko/mocks
-       * - Consider that you're dealing with Observables. Use of() operator with your dummy response inside .returnValue()
-       */
       /** arrange */
       /** act */
       /** assert */
@@ -35,6 +30,11 @@ xdescribe('CoinGeckoComponent', () => {
 
   describe('getCoinData', () => {
     it('should return details of required coin', () => {
+      /**
+       * TODO:
+       * - Use dummy data from services/coin-gecko/mocks
+       * - Consider that you're dealing with Observables. Use of() operator with your dummy response inside .returnValue()
+       */
       /** arrange */
       /** act */
       /** assert */
